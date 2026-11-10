@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fiche QCM 2 – Tracé, souveraineté et matérialisation</title>
+
+<style>
+
+/* ===== MISE EN PAGE GÉNÉRALE ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f1f4f8;
+    color: #263445;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+}
+
+/* ===== BANDEAU TITRE ===== */
+
+header {
+    background: #24476b;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+header h2 {
+    color: white;
+    border: none;
+}
+
+.subtitle {
+    color: #dce9f5;
+}
+
+/* ===== AFFICHAGE DES ÉTAPES ===== */
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+/* ===== TITRES ===== */
+
+h2 {
+    color: #24476b;
+    border-bottom: 2px solid #dce5ee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #315b7e;
+}
+
+/* ===== QUESTIONS ET CORRECTIONS ===== */
+
+.question {
+    background: #f6f8fb;
+    border: 1px solid #dce4ed;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 18px 0;
+}
+
+.answer {
+    display: block;
+    padding: 9px 12px;
+    margin: 7px 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #e7eff8;
+}
+
+.correction {
+    background: #f6f8fb;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid #52789c;
+}
+
+.result {
+    background: #eaf3ec;
+    border-left: 5px solid #39834c;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* ===== BOUTONS ===== */
+
+button {
+    background: #24476b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 10px 5px 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #38668f;
+}
+
+button:disabled {
+    background: #aab5c0;
+    cursor: not-allowed;
+}
+
+/* ===== NAVIGATION ===== */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.step-indicator {
+    font-weight: bold;
+    color: #24476b;
+    text-align: center;
+}
+
+/* ===== AUTRES ÉLÉMENTS ===== */
+
+.small {
+    font-size: 0.9em;
+    color: #607080;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc9d5;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.guide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.guide > div {
+    flex: 1;
+    min-width: 180px;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+/* ===== VERSION MOBILE ===== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation button {
+        flex: 1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Fiche QCM 2</h1>
+
+    <h2>
+        Tracé, souveraineté et matérialisation
+    </h2>
+
+    <p class="subtitle">
+        4 questions · Niveau exigeant · 7 minutes
+    </p>
+</header>
+
+<!-- NAVIGATION SUPÉRIEURE -->
+
+<div class="navigation">
+
+    <button id="topPrevious" onclick="previousStep()">
+        ← Précédent
+    </button>
+
+    <span class="step-indicator" id="topIndicator">
+        Étape 1 / 5
+    </span>
+
+    <button id="topNext" onclick="nextStep()">
+        Suivant →
+    </button>
+
+</div>
+
+<!-- DÉBUT DES ÉTAPES -->
+<!-- ================================== -->
+<!-- ÉTAPE 1 : TEST DES CONNAISSANCES -->
+<!-- ================================== -->
+
+<section class="step active" id="step1">
+
+<h2>Étape 1 – Je teste mes connaissances</h2>
+
+<p>
+Répondez aux quatre questions sans consulter votre cours.
+L'objectif est de vérifier ce que vous avez réellement retenu
+et compris. Faites appel à vos connaissances avant de chercher
+la bonne réponse.
+</p>
+
+<div class="question">
+<h3>Question 1</h3>
+
+<p><strong>
+Une frontière traverse une région montagneuse sans mur ni poste-frontière.
+Quelle conclusion est la plus rigoureuse ?
+</strong></p>
+
+<label class="answer">
+<input type="radio" name="q1" value="A">
+<strong>A.</strong> La frontière n'existe pas réellement puisqu'elle n'est pas matérialisée.
+</label>
+
+<label class="answer">
+<input type="radio" name="q1" value="B">
+<strong>B.</strong> Elle ne peut pas être internationale sans barrière physique.
+</label>
+
+<label class="answer">
+<input type="radio" name="q1" value="C">
+<strong>C.</strong> Elle peut être juridiquement définie et reconnue même si elle est peu visible sur le terrain.
+</label>
+
+<label class="answer">
+<input type="radio" name="q1" value="D">
+<strong>D.</strong> Elle ne relève pas de la souveraineté des États.
+</label>
+</div>
+
+<div class="question">
+<h3>Question 2</h3>
+
+<p><strong>
+Pourquoi les frontières qualifiées de « naturelles » sont-elles également politiques ?
+</strong></p>
+
+<label class="answer">
+<input type="radio" name="q2" value="A">
+<strong>A.</strong> Parce que tous les fleuves et les montagnes constituent des frontières depuis toujours.
+</label>
+
+<label class="answer">
+<input type="radio" name="q2" value="B">
+<strong>B.</strong> Parce que les sociétés choisissent de s'appuyer sur des éléments physiques pour délimiter un territoire, par décision ou négociation politique.
+</label>
+
+<label class="answer">
+<input type="radio" name="q2" value="C">
+<strong>C.</strong> Parce que les États ne peuvent tracer des frontières que sur des reliefs.
+</label>
+
+<label class="answer">
+<input type="radio" name="q2" value="D">
+<strong>D.</strong> Parce que les frontières naturelles sont nécessairement contestées.
+</label>
+</div>
+
+<div class="question">
+<h3>Question 3</h3>
+
+<p><strong>
+Dans l'étude de la frontière entre le Soudan et le Soudan du Sud,
+pourquoi la délimitation ne suffit-elle pas à garantir une frontière stable ?
+</strong></p>
+
+<label class="answer">
+<input type="radio" name="q3" value="A">
+<strong>A.</strong> Parce qu'un accord frontalier interdit tous les échanges entre les deux États.
+</label>
+
+<label class="answer">
+<input type="radio" name="q3" value="B">
+<strong>B.</strong> Parce que les ressources, les populations, les conflits et les désaccords territoriaux peuvent rendre le contrôle de la frontière difficile.
+</label>
+
+<label class="answer">
+<input type="radio" name="q3" value="C">
+<strong>C.</strong> Parce qu'un seul des deux États possède un accès à la mer.
+</label>
+
+<label class="answer">
+<input type="radio" name="q3" value="D">
+<strong>D.</strong> Parce que le tracé d'une frontière est toujours provisoire après une indépendance.
+</label>
+</div>
+
+<div class="question">
+<h3>Question 4</h3>
+
+<p><strong>
+Quel dispositif correspond le mieux à une frontière dont la fonction
+est de contrôler les passages plutôt que de les empêcher totalement ?
+</strong></p>
+
+<label class="answer">
+<input type="radio" name="q4" value="A">
+<strong>A.</strong> Un poste-frontière avec contrôles documentaires et douaniers.
+</label>
+
+<label class="answer">
+<input type="radio" name="q4" value="B">
+<strong>B.</strong> Une zone sans aucune réglementation.
+</label>
+
+<label class="answer">
+<input type="radio" name="q4" value="C">
+<strong>C.</strong> Une ligne matérialisée par un mur.
+</label>
+
+<label class="answer">
+<input type="radio" name="q4" value="D">
+<strong>D.</strong> Une frontière supprimée juridiquement.
+</label>
+</div>
+
+<button type="button" onclick="correctQuiz()">
+Valider mes réponses
+</button>
+
+<div id="quizResult"></div>
+
+</section>
+<!-- ================================== -->
+<!-- ÉTAPE 2 : CORRECTIONS -->
+<!-- ================================== -->
+
+<section class="step" id="step2">
+
+<h2>Étape 2 – Je comprends mes erreurs</h2>
+
+<p>
+Découvrez les bonnes réponses et lisez attentivement les explications.
+L'objectif est de comprendre les notions géographiques derrière chaque question.
+</p>
+
+<div class="correction">
+
+<h3>Question 1 – Une frontière sans matérialisation physique</h3>
+
+<p><strong>Bonne réponse : C.</strong></p>
+
+<p>
+Une frontière est avant tout une limite politique et juridique.
+Elle délimite les territoires sur lesquels les États exercent leur souveraineté.
+</p>
+
+<p>
+Elle peut être définie par des accords et reconnue par les États voisins,
+même si elle ne comporte ni mur, ni clôture, ni poste-frontière.
+</p>
+
+<p>
+Les bornes et les barrières sont des moyens de matérialisation :
+elles ne sont pas indispensables à l'existence d'une frontière.
+</p>
+
+<p><strong>À retenir :</strong>
+une frontière peut exister juridiquement sans être visible dans le paysage.
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Question 2 – Pourquoi les frontières naturelles sont-elles politiques ?</h3>
+
+<p><strong>Bonne réponse : B.</strong></p>
+
+<p>
+Un fleuve ou une montagne ne constitue pas spontanément une frontière politique.
+Ce sont les sociétés et les États qui choisissent de s'appuyer sur ces éléments
+physiques pour délimiter leurs territoires.
+</p>
+
+<p>
+Ce choix peut résulter d'une négociation, d'un traité ou d'une décision
+imposée par une puissance politique.
+</p>
+
+<p>
+Une frontière dite naturelle est donc également une construction politique.
+</p>
+
+<p><strong>À retenir :</strong>
+la nature fournit parfois un support au tracé, mais ce sont les sociétés
+qui décident de la frontière.
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Question 3 – La frontière entre le Soudan et le Soudan du Sud</h3>
+
+<p><strong>Bonne réponse : B.</strong></p>
+
+<p>
+La délimitation d'une frontière ne garantit pas automatiquement sa stabilité.
+Même lorsqu'un tracé est défini, son application peut être difficile.
+</p>
+
+<p>
+La frontière entre le Soudan et le Soudan du Sud illustre ces difficultés.
+Les désaccords territoriaux, notamment autour de la région d'Abyei,
+les ressources pétrolières et les conflits armés compliquent les relations
+entre les deux États.
+</p>
+
+<p>
+Une frontière est donc aussi un espace de tensions et de rapports de force.
+</p>
+
+<p><strong>À retenir :</strong>
+délimiter une frontière ne suffit pas : il faut également parvenir
+à la faire reconnaître et respecter.
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Question 4 – Contrôler les passages sans les empêcher</h3>
+
+<p><strong>Bonne réponse : A.</strong></p>
+
+<p>
+Un poste-frontière permet de contrôler les personnes et les marchandises
+qui franchissent une frontière. Les contrôles documentaires et douaniers
+permettent de vérifier les identités et de réglementer les échanges.
+</p>
+
+<p>
+L'objectif n'est donc pas nécessairement d'empêcher tous les passages,
+mais de sélectionner, filtrer et surveiller les flux.
+</p>
+
+<p>
+Aujourd'hui, certains États développent des <strong>smart borders</strong>,
+c'est-à-dire des frontières intelligentes qui utilisent des technologies
+numériques, des bases de données et des dispositifs biométriques.
+</p>
+
+<p><strong>À retenir :</strong>
+une frontière peut être un espace de contrôle et de filtrage
+sans être totalement fermée.
+</p>
+
+</div>
+
+<div class="result">
+
+<h3>Mon bilan</h3>
+
+<p>
+Identifiez les notions que vous maîtrisez et celles qui nécessitent encore
+un effort. Les questions auxquelles vous avez mal répondu méritent
+une attention particulière.
+</p>
+
+<p>
+Vous pouvez maintenant passer à l'exercice d'argumentation.
+</p>
+
+</div>
+
+<button onclick="showStep(1)">
+Revenir à mes réponses
+</button>
+
+<button onclick="showStep(3)">
+Passer à l'étape 3
+</button>
+
+</section>
+<!-- ================================== -->
+<!-- ÉTAPE 3 : ARGUMENTATION -->
+<!-- ================================== -->
+
+<section class="step" id="step3">
+
+<h2>Étape 3 – Je réutilise mes connaissances</h2>
+
+<p>
+Connaître son cours ne suffit pas : vous devez également être capable
+de mobiliser vos connaissances pour construire une réponse géographique argumentée.
+</p>
+
+<div class="question">
+
+<h3>À vous de rédiger !</h3>
+
+<p>
+<strong>Sujet :</strong> Montrez qu'une frontière est à la fois
+une construction politique et un espace de contrôle.
+</p>
+
+<p>
+Rédigez un court paragraphe argumenté d'environ 8 à 12 lignes.
+Vous devez utiliser au moins un exemple précis étudié dans cette fiche.
+</p>
+
+<textarea
+id="studentAnswer"
+rows="9"
+placeholder="Rédigez votre réponse ici..."
+></textarea>
+
+<p class="small">
+Conseil : essayez de construire votre réponse sans consulter
+les exemples de corrigés.
+</p>
+
+</div>
+
+<h3>Un guide pour construire votre réponse</h3>
+
+<p>
+Une réponse argumentée efficace comporte trois éléments complémentaires :
+</p>
+
+<div class="guide">
+
+<div style="background:#e7f1fa;">
+<strong style="color:#2471A3;">1. L'affirmation</strong>
+<p>
+Vous présentez clairement l'idée que vous souhaitez démontrer.
+</p>
+</div>
+
+<div style="background:#e8f5ec;">
+<strong style="color:#26945B;">2. L'exemple</strong>
+<p>
+Vous mobilisez un exemple géographique précis pour illustrer votre idée.
+</p>
+</div>
+
+<div style="background:#fff1df;">
+<strong style="color:#C47B19;">3. L'explication</strong>
+<p>
+Vous expliquez en quoi cet exemple permet de confirmer votre affirmation.
+</p>
+</div>
+
+</div>
+
+<p>
+Une bonne réponse ne se contente donc pas de juxtaposer des connaissances :
+elle les organise pour répondre directement au sujet.
+</p>
+
+<button onclick="showStep(4)">
+Consulter les exemples de corrigés
+</button>
+
+</section>
+<!-- ================================== -->
+<!-- ÉTAPE 4 : EXEMPLES DE CORRIGÉS -->
+<!-- ================================== -->
+
+<section class="step" id="step4">
+
+<h2>Étape 4 – Je compare ma réponse aux exemples corrigés</h2>
+
+<p>
+Comparez maintenant votre paragraphe aux trois propositions suivantes.
+Les couleurs permettent d'identifier les différentes étapes du raisonnement.
+</p>
+
+<div style="background:#f3f5f8;padding:15px;border-radius:9px;margin:15px 0;">
+
+<strong>Légende du code couleur :</strong>
+
+<p style="color:#2471A3;font-weight:bold;">
+■ Affirmation : l'idée défendue
+</p>
+
+<p style="color:#26945B;font-weight:bold;">
+■ Exemple géographique : le fait précis mobilisé
+</p>
+
+<p style="color:#C47B19;font-weight:bold;">
+■ Explication : le raisonnement qui relie l'exemple à l'affirmation
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Exemple 1 – Une frontière est une construction politique</h3>
+
+<p>
+<span style="color:#2471A3;font-weight:bold;">
+Une frontière est avant tout une construction politique car elle résulte
+de décisions prises par des États pour délimiter leurs territoires.
+</span>
+
+<span style="color:#26945B;font-weight:bold;">
+Par exemple, une montagne ou un fleuve peut servir de support au tracé
+d'une frontière entre deux pays.
+</span>
+
+<span style="color:#C47B19;font-weight:bold;">
+Cependant, ces éléments naturels ne constituent pas spontanément
+des limites politiques : les États doivent choisir le tracé, le négocier
+ou l'imposer. Une frontière dite naturelle est donc également
+le résultat d'une décision humaine et politique.
+</span>
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Exemple 2 – Une frontière doit être délimitée et reconnue</h3>
+
+<p>
+<span style="color:#2471A3;font-weight:bold;">
+La définition d'une frontière ne garantit pas automatiquement sa stabilité,
+car les États doivent également parvenir à faire reconnaître et respecter
+le tracé retenu.
+</span>
+
+<span style="color:#26945B;font-weight:bold;">
+La frontière entre le Soudan et le Soudan du Sud illustre cette difficulté,
+notamment dans la région d'Abyei, où des désaccords territoriaux persistent.
+</span>
+
+<span style="color:#C47B19;font-weight:bold;">
+Les enjeux liés aux ressources pétrolières et les tensions politiques
+compliquent l'application effective des accords. Ainsi, une frontière
+peut être délimitée sans être pleinement stabilisée sur le terrain.
+</span>
+</p>
+
+</div>
+
+<div class="correction">
+
+<h3>Exemple 3 – Une frontière est un espace de contrôle</h3>
+
+<p>
+<span style="color:#2471A3;font-weight:bold;">
+Une frontière ne sert pas uniquement à séparer deux territoires :
+elle permet également aux États de contrôler les personnes
+et les marchandises qui la franchissent.
+</span>
+
+<span style="color:#26945B;font-weight:bold;">
+Par exemple, les postes-frontières permettent d'effectuer des contrôles
+d'identité et des vérifications douanières. Certains États utilisent
+également des dispositifs numériques dans le cadre des smart borders.
+</span>
+
+<span style="color:#C47B19;font-weight:bold;">
+Ces équipements permettent de surveiller et de filtrer les flux
+sans nécessairement empêcher tous les passages. La frontière constitue
+donc un espace de contrôle et de régulation des échanges.
+</span>
+</p>
+
+</div>
+
+<div class="result">
+
+<h3>Vérifiez votre propre réponse</h3>
+
+<p>Avant de poursuivre, demandez-vous :</p>
+
+<ul>
+<li>Ai-je formulé une affirmation qui répond directement au sujet ?</li>
+<li>Ai-je utilisé un exemple géographique précis ?</li>
+<li>Ai-je expliqué le lien entre mon exemple et mon affirmation ?</li>
+<li>Ai-je utilisé le vocabulaire géographique approprié ?</li>
+</ul>
+
+<p>
+Votre réponse n'a pas besoin d'être identique aux modèles :
+elle doit en revanche comporter les mêmes éléments de raisonnement.
+</p>
+
+</div>
+
+<button onclick="showStep(2)">
+Revoir les corrections du QCM
+</button>
+
+<button onclick="showStep(5)">
+Passer à l'étape 5
+</button>
+
+</section>
+
+
+<!-- ================================== -->
+<!-- ÉTAPE 5 : CONSOLIDATION -->
+<!-- ================================== -->
+
+<section class="step" id="step5">
+
+<h2>Étape 5 – Je consolide mes acquis</h2>
+
+<p>
+Vous avez terminé les quatre questions et l'exercice d'argumentation.
+Il est maintenant temps de vérifier ce que vous avez réellement retenu.
+</p>
+
+<div class="result">
+
+<h3>Pourquoi reprendre les questions quelques jours plus tard ?</h3>
+
+<p>
+Pour mémoriser durablement les notions, il est utile de revenir sur
+les questions auxquelles vous avez mal répondu, mais pas immédiatement.
+</p>
+
+<p>
+Je vous conseille d'attendre quelques jours avant de reprendre cet exercice.
+Ce délai vous permettra de vérifier si vous êtes capable de retrouver
+les connaissances sans relire systématiquement le corrigé.
+</p>
+
+<p>
+Vous restez bien entendu libre de choisir le moment de cette nouvelle révision.
+</p>
+
+</div>
+
+<h3>Je reprends les questions qui m'ont posé problème</h3>
+
+<p>
+Les questions auxquelles vous avez mal répondu lors de la première étape
+sont conservées ci-dessous. Vous pouvez les reprendre pour vérifier vos progrès.
+</p>
+
+<div id="failedQuestions"></div>
+
+<div id="retryResult"></div>
+
+<button onclick="retryFailedQuestions()">
+Vérifier mes nouvelles réponses
+</button>
+
+<!-- SCHÉMA DE SYNTHÈSE -->
+
+<h2>Le schéma de synthèse : comprendre le fonctionnement d'une frontière</h2>
+
+<p>
+Retenez que la frontière est une limite politique et juridique,
+mais qu'elle peut aussi devenir un espace matériel de contrôle et de régulation.
+</p>
+
+<div style="background:#f5f7fa;border:1px solid #dce4ed;border-radius:12px;padding:18px;margin:20px 0;">
+
+<div style="background:#24476b;color:white;text-align:center;padding:16px;border-radius:9px;">
+
+<strong style="font-size:19px;">LA FRONTIÈRE</strong>
+
+<p style="margin:5px 0 0;">
+Une limite entre deux territoires souverains
+</p>
+
+</div>
+
+<div style="text-align:center;font-size:25px;color:#52789c;padding:5px;">
+↓
+</div>
+
+<div style="background:#e4eef8;padding:15px;border-radius:9px;border-left:5px solid #2471A3;">
+
+<strong style="color:#2471A3;">1. LA DÉLIMITATION</strong>
+
+<p>Définition du tracé séparant deux territoires.</p>
+
+<ul>
+<li>Traités et accords politiques</li>
+<li>Négociations entre États</li>
+<li>Éléments naturels éventuellement utilisés comme repères</li>
+</ul>
+
+</div>
+
+<div style="text-align:center;font-size:25px;color:#52789c;padding:5px;">
+↓
+</div>
+
+<div style="background:#e8f5ec;padding:15px;border-radius:9px;border-left:5px solid #26945B;">
+
+<strong style="color:#26945B;">2. LA SOUVERAINETÉ</strong>
+
+<p>Reconnaissance du pouvoir de chaque État sur son territoire.</p>
+
+<ul>
+<li>Autorité politique et juridique</li>
+<li>Reconnaissance de la frontière</li>
+<li>Respect des accords territoriaux</li>
+</ul>
+
+</div>
+
+<div style="text-align:center;font-size:25px;color:#52789c;padding:5px;">
+↓
+</div>
+
+<div style="background:#fff1df;padding:15px;border-radius:9px;border-left:5px solid #C47B19;">
+
+<strong style="color:#C47B19;">3. LA MATÉRIALISATION</strong>
+
+<p>Manifestation visible de la frontière sur le terrain.</p>
+
+<ul>
+<li>Bornes et panneaux</li>
+<li>Clôtures et murs</li>
+<li>Postes-frontières</li>
+</ul>
+
+</div>
+
+<div style="text-align:center;font-size:25px;color:#52789c;padding:5px;">
+↓
+</div>
+
+<div style="background:#f0eafa;padding:15px;border-radius:9px;border-left:5px solid #7952a3;">
+
+<strong style="color:#7952a3;">4. LE CONTRÔLE DES FLUX</strong>
+
+<p>Surveillance et régulation des passages.</p>
+
+<ul>
+<li>Contrôles d'identité</li>
+<li>Contrôles douaniers</li>
+<li>Technologies numériques et smart borders</li>
+<li>Filtrage des personnes et des marchandises</li>
+</ul>
+
+</div>
+
+</div>
+
+<h3>Les exemples à connaître</h3>
+
+<div class="correction">
+
+<p><strong>La frontière entre le Soudan et le Soudan du Sud :</strong></p>
+
+<p>
+Elle montre que la délimitation d'une frontière ne suffit pas toujours
+à garantir sa stabilité. Les désaccords territoriaux, notamment autour
+d'Abyei, et les enjeux pétroliers peuvent entretenir des tensions.
+</p>
+
+<p><strong>Les smart borders :</strong></p>
+
+<p>
+Elles illustrent l'évolution des dispositifs de contrôle frontalier
+grâce aux outils numériques, aux données informatiques et aux technologies biométriques.
+</p>
+
+</div>
+
+<h2>Mon bilan final</h2>
+
+<p>
+Avant de quitter cette fiche, vérifiez que vous êtes capable de :
+</p>
+
+<ul>
+<li>Expliquer pourquoi une frontière peut exister sans être matérialisée.</li>
+<li>Montrer que les frontières dites naturelles sont aussi politiques.</li>
+<li>Distinguer la délimitation d'une frontière de sa stabilisation effective.</li>
+<li>Expliquer comment les États contrôlent les passages.</li>
+<li>Utiliser un exemple géographique dans une réponse argumentée.</li>
+</ul>
+
+<div class="result">
+
+<h3>Bravo pour votre travail !</h3>
+
+<p>
+Vous disposez maintenant des connaissances essentielles pour comprendre
+comment les frontières sont tracées, reconnues, matérialisées et contrôlées.
+</p>
+
+<p>
+N'oubliez pas : une bonne révision ne consiste pas seulement à relire son cours,
+mais à être capable de mobiliser ses connaissances plusieurs jours après
+les avoir apprises.
+</p>
+
+</div>
+
+<button onclick="showStep(3)">
+Retour à l'argumentation
+</button>
+
+<button onclick="restartQuiz()">
+Recommencer le QCM
+</button>
+
+</section>
+<!-- ================================== -->
+<!-- NAVIGATION INFÉRIEURE -->
+<!-- ================================== -->
+
+<div class="navigation">
+
+    <button id="bottomPrevious" onclick="previousStep()">
+        ← Précédent
+    </button>
+
+    <span class="step-indicator" id="bottomIndicator">
+        Étape 1 / 5
+    </span>
+
+    <button id="bottomNext" onclick="nextStep()">
+        Suivant →
+    </button>
+
+</div>
+
+</div>
+
+<!-- ================================== -->
+<!-- JAVASCRIPT : FONCTIONNEMENT GLOBAL -->
+<!-- ================================== -->
+
+<script>
+
+// =====================================
+// 1. VARIABLES GÉNÉRALES
+// =====================================
+
+let currentStep = 1;
+const totalSteps = 5;
+
+let quizValidated = false;
+let failedQuestions = [];
+
+// Bonnes réponses
+const correctAnswers = {
+    q1: "C",
+    q2: "B",
+    q3: "B",
+    q4: "A"
+};
+
+// Intitulés des questions et propositions
+const questionData = {
+
+    q1: {
+        title: "Une frontière traverse une région montagneuse sans mur ni poste-frontière.",
+        options: {
+            A: "La frontière n'existe pas réellement puisqu'elle n'est pas matérialisée.",
+            B: "Elle ne peut pas être internationale sans barrière physique.",
+            C: "Elle peut être juridiquement définie et reconnue même si elle est peu visible sur le terrain.",
+            D: "Elle ne relève pas de la souveraineté des États."
+        }
+    },
+
+    q2: {
+        title: "Pourquoi les frontières naturelles sont-elles également politiques ?",
+        options: {
+            A: "Parce que tous les fleuves et les montagnes constituent des frontières depuis toujours.",
+            B: "Parce que les sociétés choisissent de s'appuyer sur des éléments physiques pour délimiter un territoire.",
+            C: "Parce que les États ne peuvent tracer des frontières que sur des reliefs.",
+            D: "Parce que les frontières naturelles sont nécessairement contestées."
+        }
+    },
+
+    q3: {
+        title: "Pourquoi la délimitation ne suffit-elle pas à garantir une frontière stable entre le Soudan et le Soudan du Sud ?",
+        options: {
+            A: "Parce qu'un accord frontalier interdit tous les échanges.",
+            B: "Parce que les ressources, les populations, les conflits et les désaccords territoriaux peuvent rendre le contrôle difficile.",
+            C: "Parce qu'un seul des deux États possède un accès à la mer.",
+            D: "Parce que le tracé est toujours provisoire après une indépendance."
+        }
+    },
+
+    q4: {
+        title: "Quel dispositif permet de contrôler les passages plutôt que de les empêcher totalement ?",
+        options: {
+            A: "Un poste-frontière avec contrôles documentaires et douaniers.",
+            B: "Une zone sans aucune réglementation.",
+            C: "Une ligne matérialisée par un mur.",
+            D: "Une frontière supprimée juridiquement."
+        }
+    }
+
+};
+
+
+// =====================================
+// 2. AFFICHAGE DES ÉTAPES
+// =====================================
+
+function showStep(step) {
+
+    if (step < 1 || step > totalSteps) {
+        return;
+    }
+
+    // Le QCM doit être validé avant de poursuivre
+    if (step > 1 && !quizValidated) {
+
+        alert("Veuillez d'abord valider vos réponses au QCM.");
+
+        return;
+    }
+
+    // Masquer toutes les étapes
+    document.querySelectorAll(".step").forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    // Afficher l'étape demandée
+    const target = document.getElementById("step" + step);
+
+    if (!target) {
+        return;
+    }
+
+    target.classList.add("active");
+
+    currentStep = step;
+
+    // Actualiser les boutons
+    updateNavigation();
+
+    // Afficher les questions ratées à l'étape 5
+    if (step === 5) {
+        displayFailedQuestions();
+    }
+
+    // Revenir en haut de page
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+// =====================================
+// 3. MISE À JOUR DE LA NAVIGATION
+// =====================================
+
+function updateNavigation() {
+
+    const previousButtons = [
+        document.getElementById("topPrevious"),
+        document.getElementById("bottomPrevious")
+    ];
+
+    const nextButtons = [
+        document.getElementById("topNext"),
+        document.getElementById("bottomNext")
+    ];
+
+    const indicators = [
+        document.getElementById("topIndicator"),
+        document.getElementById("bottomIndicator")
+    ];
+
+    previousButtons.forEach(function(button) {
+
+        button.disabled = (currentStep === 1);
+
+    });
+
+    nextButtons.forEach(function(button) {
+
+        button.disabled =
+            (currentStep === totalSteps) ||
+            (currentStep === 1 && !quizValidated);
+
+    });
+
+    indicators.forEach(function(indicator) {
+
+        indicator.textContent =
+            "Étape " + currentStep + " / " + totalSteps;
+
+    });
+
+}
+
+
+// =====================================
+// 4. PASSER À L'ÉTAPE SUIVANTE
+// =====================================
+
+function nextStep() {
+
+    if (currentStep < totalSteps) {
+
+        showStep(currentStep + 1);
+
+    }
+
+}
+
+
+// =====================================
+// 5. REVENIR À L'ÉTAPE PRÉCÉDENTE
+// =====================================
+
+function previousStep() {
+
+    if (currentStep > 1) {
+
+        showStep(currentStep - 1);
+
+    }
+
+}
+
+
+// =====================================
+// 6. VALIDATION DU QCM
+// =====================================
+
+function correctQuiz() {
+
+    if (quizValidated) {
+
+        showStep(2);
+
+        return;
+
+    }
+
+    let score = 0;
+
+    failedQuestions = [];
+
+    // Vérifier les quatre réponses
+    for (let question in correctAnswers) {
+
+        const selected = document.querySelector(
+            'input[name="' + question + '"]:checked'
+        );
+
+        // Vérifier que toutes les questions sont renseignées
+        if (!selected) {
+
+            alert("Veuillez répondre aux quatre questions avant de valider.");
+
+            return;
+
+        }
+
+        // Comparer avec la bonne réponse
+        if (selected.value === correctAnswers[question]) {
+
+            score++;
+
+        } else {
+
+            failedQuestions.push(question);
+
+        }
+
+    }
+
+    // Mémoriser la validation
+    quizValidated = true;
+
+    // Afficher le résultat
+    document.getElementById("quizResult").innerHTML =
+
+        '<div class="result">' +
+        '<h3>Votre résultat : ' + score + ' / 4</h3>' +
+        '<p>' + score + ' bonne(s) réponse(s) sur 4.</p>' +
+        '<p>Vous pouvez maintenant consulter les corrections.</p>' +
+        '</div>';
+
+    updateNavigation();
+
+    // Passer automatiquement aux corrections
+    showStep(2);
+
+}
+
+
+// =====================================
+// 7. AFFICHAGE DES QUESTIONS RATÉES
+// =====================================
+
+function displayFailedQuestions() {
+
+    const container =
+        document.getElementById("failedQuestions");
+
+    if (!container) {
+        return;
+    }
+
+    if (failedQuestions.length === 0) {
+
+        container.innerHTML =
+            '<div class="result">' +
+            '<strong>Bravo !</strong> Vous avez obtenu toutes les bonnes réponses au premier essai.' +
+            '</div>';
+
+        return;
+
+    }
+
+    let html = "";
+
+    failedQuestions.forEach(function(question) {
+
+        html +=
+            '<div class="question">' +
+            '<h3>Question ' + question.replace("q", "") + '</h3>' +
+            '<p>' + questionData[question].title + '</p>' +
+            '<p><strong>Bonne réponse : ' +
+            correctAnswers[question] + '</strong></p>' +
+            '<p class="small">Vous pouvez retrouver son explication à l’étape 2.</p>' +
+            '</div>';
+
+    });
+
+    container.innerHTML = html;
+
+}
+
+
+// =====================================
+// 8. NOUVEL ESSAI SUR LES QUESTIONS RATÉES
+// =====================================
+
+function retryFailedQuestions() {
+
+    const container =
+        document.getElementById("failedQuestions");
+
+    const result =
+        document.getElementById("retryResult");
+
+    // Toutes les réponses étaient justes
+    if (failedQuestions.length === 0) {
+
+        result.innerHTML =
+            '<div class="result">Félicitations ! Aucune erreur à reprendre.</div>';
+
+        return;
+
+    }
+
+    // Si le second QCM n'est pas encore affiché
+    if (!document.getElementById("retryForm")) {
+
+        let html = '<form id="retryForm">';
+
+        failedQuestions.forEach(function(question) {
+
+            html +=
+                '<div class="question">' +
+                '<h3>Question ' + question.replace("q", "") + '</h3>' +
+                '<p><strong>' + questionData[question].title + '</strong></p>';
+
+            for (let letter in questionData[question].options) {
+
+                html +=
+                    '<label class="answer">' +
+                    '<input type="radio" name="retry_' + question +
+                    '" value="' + letter + '">' +
+                    '<strong>' + letter + '.</strong> ' +
+                    questionData[question].options[letter] +
+                    '</label>';
+
+            }
+
+            html += '</div>';
+
+        });
+
+        html += '</form>';
+
+        container.innerHTML = html;
+
+        result.innerHTML =
+            '<p>Répondez à nouveau aux questions ci-dessus.</p>';
+
+        return;
+
+    }
+
+    // Vérifier les nouvelles réponses
+    let newFailures = [];
+    let score = 0;
+
+    for (let question of failedQuestions) {
+
+        const selected = document.querySelector(
+            'input[name="retry_' + question + '"]:checked'
+        );
+
+        if (!selected) {
+
+            alert("Veuillez répondre à toutes les questions de ce nouvel essai.");
+
+            return;
+
+        }
+
+        if (selected.value === correctAnswers[question]) {
+
+            score++;
+
+        } else {
+
+            newFailures.push(question);
+
+        }
+
+    }
+
+    const previousCount = failedQuestions.length;
+
+    failedQuestions = newFailures;
+
+    result.innerHTML =
+        '<div class="result">' +
+        '<h3>Résultat du nouvel essai : ' +
+        score + ' / ' + previousCount + '</h3>' +
+        (newFailures.length === 0
+            ? '<p>Excellent ! Toutes les réponses sont maintenant correctes.</p>'
+            : '<p>Il reste ' + newFailures.length +
+              ' question(s) à retravailler. Consultez les corrections à l’étape 2.</p>') +
+        '</div>';
+
+    // Actualiser les questions restantes
+    displayFailedQuestions();
+
+}
+
+
+// =====================================
+// 9. RECOMMENCER ENTIÈREMENT LE QCM
+// =====================================
+
+function restartQuiz() {
+
+    const confirmation = confirm(
+        "Voulez-vous vraiment recommencer la fiche depuis le début ? Votre score et vos réponses seront effacés."
+    );
+
+    if (!confirmation) {
+        return;
+    }
+
+    // Effacer les réponses au QCM initial
+    document.querySelectorAll(
+        '#step1 input[type="radio"]'
+    ).forEach(function(input) {
+
+        input.checked = false;
+
+    });
+
+    // Effacer la rédaction
+    document.getElementById("studentAnswer").value = "";
+
+    // Effacer les résultats
+    document.getElementById("quizResult").innerHTML = "";
+
+    document.getElementById("retryResult").innerHTML = "";
+
+    document.getElementById("failedQuestions").innerHTML = "";
+
+    // Réinitialiser les variables
+    quizValidated = false;
+
+    failedQuestions = [];
+
+    // Revenir à la première étape
+    showStep(1);
+
+}
+
+
+// =====================================
+// 10. INITIALISATION
+// =====================================
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    currentStep = 1;
+
+    updateNavigation();
+
+});
+
+</script>
+
+</body>
+</html>
